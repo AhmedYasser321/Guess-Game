@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #eee;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+h1{
+    background-color: white;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+.game{
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 20px;
+    .game-area{
+        margin: auto;
+        .inputs{
+            margin-bottom: 15px;
+        > div{
+            margin-bottom: 10px;
+            span{
+                font-size: 25px;
+                margin-right: 10px;
+            }
+           
+        }
+        .hidden{
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        
+input{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    border: none;
+    border-bottom: 4px solid rgb(26, 24, 24);
+    outline: none;
+    caret-color: rgb(55, 11, 216);
+    &.in-place{
+        background-color: rgb(230, 16, 105);
+        color: white;
+    }
+    &.not-in-place{
+        background-color: rgb(85, 173, 27);
+        color: white;
+    }
+    &.no{
+        background-color: black;
+        color: white;
+    }
+    &:focus{
+        outline: 1px solid #b98a8a;
+    }
+}
+        }
+        .control{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            button{
+                color: white;
+                font-size: 30px;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+}
+            button:disabled {
+                background-color: black;
+                opacity: 0.4;
+                cursor: no-drop;
+            }
+            .check{
+            background-color: rgb(146, 41, 67);
+            flex: 1;
+            }
+            .hint{
+                background-color: cadetblue;
+            }
+        }
+    }
+    .key-colors{
+       .key-color{
+        display: flex;
+        margin: 20px;
+        align-items: center;
+        background-color: white;
+        padding: 18px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+                .key{
+            width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                margin-right: 10px;
+        }
+        .in-place{
+            background-color: rgb(230, 16, 105);
+        }
+        .not-in-place{
+            background-color: rgb(85, 173, 27);
+        }
+        .no{
+            background-color: black;
+        }
+       }
+       .key-text{
+        font-size: 20px;
+       
+       }
+       
+    }
+}
